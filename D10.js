@@ -8,7 +8,7 @@ REGOLE
 */
 
 // JS Basics
-
+console.log("------------------------- JS BASICS -------------------------");
 /* ESERCIZIO A
   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
 */
@@ -56,10 +56,15 @@ me.skills.pop();
 console.log(me);
 
 // Funzioni
-
+console.log("------------------------- FUNZIONI -------------------------");
 /* ESERCIZIO 1
   Crea una funzione chiamata "dice": deve generare un numero casuale tra 1 e 6.
 */
+function dice() {
+  return Math.floor(Math.random() * 6) + 1;
+}
+const num = dice();
+console.log(num);
 
 /* ESERCIZIO 2
   Crea una funzione chiamata "whoIsBigger" che riceve due numeri come parametri e ritorna il maggiore dei due.
@@ -112,6 +117,7 @@ console.log(me);
 */
 
 // Arrays & Oggetti
+console.log("---------------------- ARRAY & OGGETTI ----------------------");
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
 
@@ -154,6 +160,7 @@ console.log(me);
 */
 
 // DOM (nota: gli elementi che selezionerai non si trovano realmente nella pagina)
+console.log("------------------------- DOM -------------------------");
 
 /* ESERCIZIO 20
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
@@ -184,6 +191,7 @@ console.log(me);
 */
 
 // [EXTRA] JS Avanzato
+console.log("------------------------ JS ADVANCED ------------------------");
 
 /* ESERCIZIO 27
   Crea una funzione chiamata "halfTree" che riceve un numero come parametro e costruisce un mezzo albero di "*" (asterischi) dell'altezza fornita.
