@@ -119,6 +119,13 @@ console.log(resultEs4b);
 /* ESERCIZIO 7
   Scrivi una funzione chiamata "whatDayIsIt" che ritorna il giorno della settimana corrente.
 */
+function whatDayIsIt() {
+  const week = ["Lunedi", "Martedi", "Mercoledi", "Giovedi", "Venerdi", "Sabato", "Domenica"];
+  const today = new Date();
+  const weekIndex = today.getDay() - 1;
+  return week[weekIndex];
+}
+console.log(whatDayIsIt());
 
 /* ESERCIZIO 8
   Scrivi una funzione chiamata "rollTheDices" che riceve un numero come parametro.
@@ -132,6 +139,22 @@ console.log(resultEs4b);
       values: [3, 3, 4]
   }
 */
+function rollTheDices(x) {
+  let values = [];
+  let sum = 10;
+
+  for (let index = 0; index < x; index++) {
+    const element = dice();
+    values.push(element);
+    sum += element;
+  }
+  return {
+    sum: sum,
+    values: values,
+  };
+}
+let resultEs8 = rollTheDices(3);
+console.log(resultEs8);
 
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
