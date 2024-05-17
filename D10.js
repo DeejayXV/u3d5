@@ -159,10 +159,25 @@ console.log(resultEs8);
 /* ESERCIZIO 9
   Scrivi una funzione chiamata "howManyDays" che riceve una data come parametro e ritorna il numero di giorni trascorsi da tale data.
 */
+function howManyDays(data) {
+  let giorniPassati = new Date(data);
+}
 
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
+function isTodayMyBirthday(compleanno) {
+  let oggi = new Date();
+  let today = oggi.getDate();
+  let thisMonth = oggi.getMonth();
+  let birthday = new Date(compleanno);
+  let giornoNascita = birthday.getDate();
+  let birthMonth = birthday.getMonth();
+
+  return today === birthday && thisMonth === birthMonth;
+}
+let resultEs10 = isTodayMyBirthday("1997-02-02");
+console.log(resultEs10);
 
 // Arrays & Oggetti
 console.log("---------------------- ARRAY & OGGETTI ----------------------");
